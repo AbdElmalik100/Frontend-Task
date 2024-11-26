@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@layer base {
+  * {
+    @apply box-border
+  }
+  body {
+    @apply font-League
+  }
+  .line-hover {
+    @apply relative before:absolute before:rounded-full before:w-full before:h-0.5 before:bg-black before:left-0 before:-bottom-1 before:transition-transform before:scale-0 before:origin-right hover:before:scale-100 hover:before:origin-left
+  }
+  .prime-btn {
+    @apply p-3 px-6 rounded-full text-black bg-primary-100 w-fit mx-auto transition-all ease-in-out hover:bg-primary-200
+  }
+  ul {
+    @apply list-none
+  }
+  input {
+    @apply outline-none p-2 px-4 rounded-full
+  }
+}
